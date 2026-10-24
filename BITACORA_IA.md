@@ -2,7 +2,7 @@
 
 * **Estudiante:** Yazir Antonio Bala Flores
 * **Materia:** Desarrollo de Aplicaciones Web / Programación con IA
-* **Herramientas de IA utilizadas:** Gemini (Google DeepMind) en Antigravity IDE
+* **Herramientas de IA utilizadas:** GitHub Copilot en Visual Studio Code (activado con GitHub Pro)
 * **Proyecto:** Conversor de Divisas con Vite y API de Tasas de Cambio
 
 ---
@@ -67,7 +67,7 @@ A continuación se presentan los 5 prompts reales utilizados para la construcci�
 
 ### 🔹 Prompt 5: Documentación README
 > **Prompt tal cual:**
-> *"Genera un archivo README.md para el repositorio que incluya dos secciones: primero, la declaración de uso de IA (indicando que usé Gemini y Antigravity para generar la estructura, el consumo de la API y el manejo de errores, y qué partes hice yo manualmente); segundo, las instrucciones paso a paso para clonar el repositorio, configurar el archivo .env y ejecutar el proyecto."*
+> *"Genera un archivo README.md para el repositorio que incluya dos secciones: primero, la declaración de uso de IA (indicando que usé GitHub Copilot y Visual Studio Code para generar la estructura, el consumo de la API y el manejo de errores, y qué partes hice yo manualmente); segundo, las instrucciones paso a paso para clonar el repositorio, configurar el archivo .env y ejecutar el proyecto."*
 
 * **¿Qué respuesta dio la IA?**
   Produjo un documento estructurado en Markdown con insignias, tablas explicativas, bloques de código para la instalación y explicación de la arquitectura del proyecto.

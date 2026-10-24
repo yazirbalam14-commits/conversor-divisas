@@ -9,7 +9,7 @@ Aplicación web moderna, ligera y responsiva para consultar tasas de cambio y re
 En cumplimiento con los lineamientos académicos de la materia, se detalla el uso ético y transparente de herramientas de IA durante el desarrollo:
 
 ### 1. Herramientas de IA Utilizadas
-* **Gemini (Modelo de Google)** dentro del entorno **Antigravity IDE**: Utilizado como asistente de programación en pares (*pair-programming*) y co-piloto de arquitectura.
+* **GitHub Copilot** (Extensión oficial en **Visual Studio Code**, activada mediante el beneficio de **GitHub Student Developer Pack / GitHub Pro**): Utilizado como asistente de autocompletado inteligente, generación de código y copiloto de programación en pares.
 
 ### 2. Tareas en las que se usó la IA
 * **Estructuración del proyecto:** Generación de la plantilla base de Vite, configuración de dependencias y reglas de `.gitignore` para salvaguarda de credenciales.
