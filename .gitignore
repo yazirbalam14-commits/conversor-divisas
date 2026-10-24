@@ -30,3 +30,6 @@ pnpm-debug.log*
 .idea/
 .DS_Store
 Thumbs.db
+
+# Enunciado de la tarea local
+Tarea-2.pdf
