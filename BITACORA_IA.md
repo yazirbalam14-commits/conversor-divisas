@@ -74,7 +74,7 @@ A continuación se presentan los 5 prompts reales utilizados para la construcci�
 * **¿Funcionó a la primera?**
   **Sí.** La redacción fue clara y respetó las directrices solicitadas.
 * **¿Qué tuve que corregir o ajustar?**
-  Personalicé los datos con mi usuario de GitHub (`@Yazir-BF`), el nombre exacto del repositorio, y agregué una sección de prueba de errores paso a paso para facilitar la evaluación del profesor durante la revisión.
+  Personalicé los datos con mi usuario de GitHub (`@yazirbalam14-commits`), el nombre exacto del repositorio, y agregué una sección de prueba de errores paso a paso para facilitar la evaluación del profesor durante la revisión.
 
 ---
 

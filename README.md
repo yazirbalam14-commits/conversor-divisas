@@ -47,7 +47,7 @@ Sigue estos pasos para clonar y ejecutar el proyecto localmente en tu computador
 
 ### Paso 1: Clonar el repositorio
 ```bash
-git clone https://github.com/Yazir-BF/conversor-divisas.git
+git clone https://github.com/yazirbalam14-commits/conversor-divisas.git
 cd conversor-divisas
 ```
 
@@ -126,5 +126,5 @@ La aplicación maneja tres escenarios críticos con mensajes claros y alertas vi
 
 ## 👤 Autor
 
-* **Yazir Antonio Bala Flores** ([@Yazir-BF](https://github.com/Yazir-BF))
+* **Yazir Antonio Balam Flores** ([@yazirbalam14-commits](https://github.com/yazirbalam14-commits))
 * Estudiante beneficiario del programa **GitHub Student Developer Pack (GitHub Pro)**.
