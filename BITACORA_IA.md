@@ -78,6 +78,19 @@ A continuación se presentan los 5 prompts reales utilizados para la construcci�
 
 ---
 
+### 🔹 Prompt 6: Rediseño visual formal
+> **Prompt tal cual:**
+> *"Cambia los estilos del index.html para que la página se vea más sobria y formal, quitando el fondo azul genérico. Usa una paleta con fondo claro en blanco roto (#F4F4F4) o crema (#FAF5EB), encabezados en verde bosque (#1E3F20), texto principal en gris carbón (#2C2C2C), el botón principal con acento en amarillo oro (#D49B2A) y las alertas de error en tono terracota (#C15C3D), cuidando que el texto tenga buen contraste."*
+
+* **¿Qué respuesta dio la IA?**
+  Reescribió la hoja de estilos CSS en `index.html` adoptando la paleta sobria solicitada: fondo con gradiente en crema claro (`#FAF5EB`), tarjeta en blanco puro con bordes sutiles, encabezados en verde bosque (`#1E3F20`), cuerpo de texto en gris carbón (`#2C2C2C`), botón principal en amarillo oro (`#D49B2A`) y alertas de error en terracota (`#C15C3D`).
+* **¿Funcionó a la primera?**
+  **Casi a la primera.** La armonía de colores quedó muy elegante y sobria, pero requirió una optimización en el contraste del botón y la alerta.
+* **¿Qué tuve que corregir o ajustar?**
+  En la primera propuesta, el botón amarillo oro tenía texto en color blanco, lo que generaba un contraste insuficiente. Lo ajusté a un tono oscuro institucional (`#192C1A`) con `font-weight: 700`, superando el ratio de contraste exigido por accesibilidad WCAG (más de 5.5:1). Asimismo, en el contenedor terracota se empleó un fondo claro suave (`#FDF5F2`) con tipografía en marrón terracota profundo (`#8C371E` y `#4E2114`) para máxima claridad de lectura.
+
+---
+
 ## 2. Error de la IA Detectado y Cómo se Resolvió
 
 ### ⚠️ El Problema:

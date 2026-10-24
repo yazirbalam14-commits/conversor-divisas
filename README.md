@@ -30,7 +30,7 @@ En cumplimiento con los lineamientos académicos de la materia, se detalla el us
 ## 🛠️ Tecnologías Empleadas
 
 * **HTML5 semántico** con accesibilidad (`aria-live`, roles de alerta).
-* **CSS3 moderno** (Variables personalizadas, Flexbox, CSS Grid, Glassmorphism, animaciones fluidas).
+* **CSS3 moderno** (Diseño sobrio y formal con paleta crema, verde bosque `#1E3F20`, acento amarillo oro `#D49B2A`, alertas en terracota `#C15C3D` y alto contraste WCAG).
 * **JavaScript ES6+** (`async/await`, Fetch API, detección con `navigator.onLine`, internacionalización con `Intl.NumberFormat`).
 * **Vite** (Entorno de desarrollo rápido y empaquetador optimizado).
 * **ExchangeRate-API** ([https://open.er-api.com](https://open.er-api.com)) como fuente de tipos de cambio en vivo.
