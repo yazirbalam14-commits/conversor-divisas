@@ -1,10 +1,10 @@
-# 💱 Conversor de Divisas en Tiempo Real
+# Conversor de Divisas en Tiempo Real
 
 Aplicación web moderna, ligera y responsiva para consultar tasas de cambio y realizar conversiones de divisas en tiempo real, desarrollada con **JavaScript Vanilla**, **Vite** y consumiendo la API de **ExchangeRate-API**.
 
 ---
 
-## 🤖 Declaración de Uso de Inteligencia Artificial
+## Declaración de Uso de Inteligencia Artificial
 
 En cumplimiento con los lineamientos académicos de la materia, se detalla el uso ético y transparente de herramientas de IA durante el desarrollo:
 
@@ -27,7 +27,7 @@ En cumplimiento con los lineamientos académicos de la materia, se detalla el us
 
 ---
 
-## 🛠️ Tecnologías Empleadas
+## Tecnologías Empleadas
 
 * **HTML5 semántico** con accesibilidad (`aria-live`, roles de alerta).
 * **CSS3 moderno** (Diseño sobrio y formal con paleta crema, verde bosque `#1E3F20`, acento amarillo oro `#D49B2A`, alertas en terracota `#C15C3D` y alto contraste WCAG).
@@ -37,7 +37,7 @@ En cumplimiento con los lineamientos académicos de la materia, se detalla el us
 
 ---
 
-## 🚀 Instrucciones de Instalación y Ejecución
+## Instrucciones de Instalación y Ejecución
 
 Sigue estos pasos para clonar y ejecutar el proyecto localmente en tu computadora:
 
@@ -77,7 +77,7 @@ VITE_API_URL=https://open.er-api.com/v6/latest
 VITE_API_KEY=tu_api_key_aqui
 ```
 
-> 🔒 **Nota de Seguridad:** El archivo `.env` se encuentra registrado en `.gitignore`, por lo que **nunca** se subirá al repositorio público ni expondrá claves de acceso.
+> **Nota de Seguridad:** El archivo `.env` se encuentra registrado en `.gitignore`, por lo que **nunca** se subirá al repositorio público ni expondrá claves de acceso.
 
 ### Paso 4: Iniciar el servidor de desarrollo
 ```bash
@@ -95,7 +95,7 @@ npm run preview
 
 ---
 
-## 🧪 Casos de Prueba y Manejo de Errores
+## Casos de Prueba y Manejo de Errores
 
 La aplicación maneja tres escenarios críticos con mensajes claros y alertas visuales en rojo:
 
@@ -108,7 +108,7 @@ La aplicación maneja tres escenarios críticos con mensajes claros y alertas vi
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```text
 ├── .env                # Variables de entorno locales (IGNORADO POR GIT)
@@ -124,7 +124,7 @@ La aplicación maneja tres escenarios críticos con mensajes claros y alertas vi
 
 ---
 
-## 👤 Autor
+## Autor
 
 * **Yazir Antonio Balam Flores** ([@yazirbalam14-commits](https://github.com/yazirbalam14-commits))
 * Estudiante beneficiario del programa **GitHub Student Developer Pack (GitHub Pro)**.

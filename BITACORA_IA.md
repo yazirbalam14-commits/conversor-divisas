@@ -1,6 +1,6 @@
-# 📓 Bitácora de Programación con Inteligencia Artificial
+# Bitácora de Programación con Inteligencia Artificial
 
-* **Estudiante:** Yazir Antonio Bala Flores
+* **Estudiante:** Yazir Antonio Balam Flores
 * **Materia:** Desarrollo de Aplicaciones Web / Programación con IA
 * **Herramientas de IA utilizadas:** GitHub Copilot en Visual Studio Code (activado con GitHub Pro)
 * **Proyecto:** Conversor de Divisas con Vite y API de Tasas de Cambio
@@ -9,11 +9,11 @@
 
 ## 1. Registro de Prompts y Evaluación de Respuestas
 
-A continuación se presentan los 5 prompts reales utilizados para la construcción incremental de la aplicación, detallando el resultado obtenido y los ajustes realizados en cada iteración.
+A continuación se presentan los prompts reales utilizados para la construcción incremental de la aplicación con la asistencia de GitHub Copilot en Visual Studio Code, detallando el resultado obtenido y los ajustes realizados en cada iteración.
 
 ---
 
-### 🔹 Prompt 1: Estructura y Seguridad
+### Prompt 1: Estructura y Seguridad
 > **Prompt tal cual:**
 > *"Crea la configuración inicial de un proyecto web sencillo con Vite (package.json, .gitignore y un ejemplo de .env) para una app de consulta de tipo de cambio de divisas. Asegúrate de que el archivo .gitignore oculte el archivo .env y node_modules para nunca subir mi API Key al repositorio."*
 
@@ -26,7 +26,7 @@ A continuación se presentan los 5 prompts reales utilizados para la construcci�
 
 ---
 
-### 🔹 Prompt 2: Interfaz de Usuario
+### Prompt 2: Interfaz de Usuario
 > **Prompt tal cual:**
 > *"Genera el archivo index.html con estilos CSS integrados en modo oscuro para el conversor de divisas. Debe tener una interfaz clara y usable con un campo para escribir la moneda base (ej. USD), un campo numérico para la cantidad, un botón para consultar la API, un contenedor oculto para mostrar los resultados y otro contenedor en rojo para mostrar mensajes de error."*
 
@@ -39,7 +39,7 @@ A continuación se presentan los 5 prompts reales utilizados para la construcci�
 
 ---
 
-### 🔹 Prompt 3: Petición a la API
+### Prompt 3: Petición a la API
 > **Prompt tal cual:**
 > *"Escribe el archivo app.js que lea las variables VITE_API_URL y VITE_API_KEY desde el archivo .env usando import.meta.env. Crea una función asíncrona con fetch() que consulte la API de tipo de cambio (https://open.er-api.com/v6/latest) y muestre en pantalla la conversión de la moneda ingresada a Pesos Mexicanos (MXN), Euros (EUR) y Dólares (USD)."*
 
@@ -52,7 +52,7 @@ A continuación se presentan los 5 prompts reales utilizados para la construcci�
 
 ---
 
-### 🔹 Prompt 4: Manejo de Errores
+### Prompt 4: Manejo de Errores
 > **Prompt tal cual:**
 > *"Modifica el archivo app.js para agregar un manejo de errores completo antes y durante la petición a la API. Debe detectar y mostrar un mensaje claro en pantalla en tres casos: 1) cuando el usuario no tiene conexión a internet, 2) cuando la API devuelve una respuesta vacía o la moneda no existe, y 3) cuando se supera el límite de peticiones (código HTTP 429)."*
 
@@ -65,12 +65,12 @@ A continuación se presentan los 5 prompts reales utilizados para la construcci�
 
 ---
 
-### 🔹 Prompt 5: Documentación README
+### Prompt 5: Documentación README
 > **Prompt tal cual:**
 > *"Genera un archivo README.md para el repositorio que incluya dos secciones: primero, la declaración de uso de IA (indicando que usé GitHub Copilot y Visual Studio Code para generar la estructura, el consumo de la API y el manejo de errores, y qué partes hice yo manualmente); segundo, las instrucciones paso a paso para clonar el repositorio, configurar el archivo .env y ejecutar el proyecto."*
 
 * **¿Qué respuesta dio la IA?**
-  Produjo un documento estructurado en Markdown con insignias, tablas explicativas, bloques de código para la instalación y explicación de la arquitectura del proyecto.
+  Produjo un documento estructurado en Markdown con tablas explicativas, bloques de código para la instalación y explicación de la arquitectura del proyecto.
 * **¿Funcionó a la primera?**
   **Sí.** La redacción fue clara y respetó las directrices solicitadas.
 * **¿Qué tuve que corregir o ajustar?**
@@ -78,7 +78,7 @@ A continuación se presentan los 5 prompts reales utilizados para la construcci�
 
 ---
 
-### 🔹 Prompt 6: Rediseño visual formal
+### Prompt 6: Rediseño visual formal
 > **Prompt tal cual:**
 > *"Cambia los estilos del index.html para que la página se vea más sobria y formal, quitando el fondo azul genérico. Usa una paleta con fondo claro en blanco roto (#F4F4F4) o crema (#FAF5EB), encabezados en verde bosque (#1E3F20), texto principal en gris carbón (#2C2C2C), el botón principal con acento en amarillo oro (#D49B2A) y las alertas de error en tono terracota (#C15C3D), cuidando que el texto tenga buen contraste."*
 
@@ -93,7 +93,7 @@ A continuación se presentan los 5 prompts reales utilizados para la construcci�
 
 ## 2. Error de la IA Detectado y Cómo se Resolvió
 
-### ⚠️ El Problema:
+### El Problema:
 Al probar el caso 2 (*moneda que no existe*, por ejemplo ingresando `XYZ` o `123`), la propuesta inicial de la IA asumía que la API respondería con un código de error HTTP estándar (`response.status === 404`). Por lo tanto, el código hacía:
 
 ```javascript
@@ -103,10 +103,10 @@ if (!response.ok) {
   return;
 }
 const data = await response.json();
-const rateMxn = data.rates['MXN']; // 💥 Rompía aquí si la moneda no existía
+const rateMxn = data.rates['MXN']; // Fallaba aquí si la moneda no existía
 ```
 
-### 🔍 Detección y Análisis:
+### Detección y Análisis:
 Al inspeccionar las peticiones reales en la consola de red (*Network Tab* de Chrome DevTools) consultando `https://open.er-api.com/v6/latest/INVALID`, me percaté de que la API **no devuelve HTTP 404 ni 400**. La API devuelve **código HTTP 200 (OK)** con el siguiente cuerpo JSON:
 
 ```json
@@ -118,7 +118,7 @@ Al inspeccionar las peticiones reales en la consola de red (*Network Tab* de Chr
 
 Como la respuesta tenía `response.ok === true`, el código de la IA continuaba su ejecución e intentaba acceder a `data.rates['MXN']`. Al no existir la propiedad `rates` en el objeto de error, JavaScript arrojaba un error de ejecución `Cannot read properties of undefined (reading 'MXN')` o mostraba `NaN` en pantalla en lugar de presentar el mensaje de error amigable en rojo.
 
-### 🛠️ Solución Implementada:
+### Solución Implementada:
 Modifiqué la validación en `app.js` para inspeccionar la estructura interna del JSON devuelto por la API antes de intentar leer cualquier tasa:
 
 ```javascript
@@ -133,8 +133,7 @@ if (
   const razon = data?.['error-type'] ? ` (Causa: ${data['error-type']})` : '';
   mostrarError(
     'Moneda no encontrada o respuesta vacía',
-    `El código "${baseCurrency}" no es válido o no existe en la API${razon}. Verifica el código ISO (ej. USD, EUR, MXN).`,
-    '🔍'
+    `El código "${baseCurrency}" no es válido o no existe en la API${razon}. Verifica el código ISO (ej. USD, EUR, MXN).`
   );
   return;
 }
